@@ -4,7 +4,7 @@
 apk update && apk upgrade
 clear
 # Install nodejs
-apk add nodejs npm
+apk add nodejs-current
 
 if [ $? -eq 0 ]; then
    echo "Installation successful"
@@ -51,7 +51,7 @@ else
 fi
 
 echo "Installing dependencies"
-npm add
+add npm
 
 if [ $? -eq 0 ]; then
    echo "Dependencies installation successful."
